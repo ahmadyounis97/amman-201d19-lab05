@@ -10,13 +10,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) {
     let result = a + b;
-    return [result, 'The sum of '+a+' and '+b+' is '+result+'.'];
+    return [result, 'The sum of ' + a + ' and ' + b + ' is ' + result + '.'];
 
 }
 //console.log(sum(4,7));
 
 // Here is the test for sum(); uncomment it to run it
- testSum(4,7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -29,14 +29,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { 
-let result02 = a * b;
-return [result02, 'The product of '+a+' and '+b+' is '+result02+'.'];
+function multiply(a, b) {
+    let result02 = a * b;
+    return [result02, 'The product of ' + a + ' and ' + b + ' is ' + result02 + '.'];
 }
 //console.log(multiply(5,9));
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+testMultiply(5, 9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -52,15 +52,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { 
+function sumAndMultiply(a, b, c) {
     let result03 = a + b + c;
     let result04 = a * b * c;
-    return[result03,result04, a+' and '+b+' and '+c+' sum to '+result03+'.','The product of '+a+' and '+b+' and '+c+' is '+result04+'.'];
+    return [result03, result04, a + ' and ' + b + ' and ' + c + ' sum to ' + result03 + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + result04 + '.'];
 }
 //console.log(sumAndMultiply(4,7,5));
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
- testSumAndMultiply(4,7,5);
+testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -77,13 +77,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-    function sumArray(testArray) { //eslint-disable-line
-        let result05 = testArray[0] + testArray[1] + testArray[2];
-        let resultString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + result05 + ' is their sum.';
-        return [result05, resultString];
-    };
-    //console.log(sumArray(testArray));
-    testSumArray(testArray);
+function sumArray(testArray) { //eslint-disable-line
+    let result05 = testArray[0] + testArray[1] + testArray[2];
+    let resultString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + result05 + ' is their sum.';
+    return [result05, resultString];
+};
+//console.log(sumArray(testArray));
+testSumArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -98,9 +98,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+let result06 = testArray[0] * testArray[1] * testArray[2];
+let resultString = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + result06 + '.';
+    return [result06, resultString];
 
 }
-
+console.log(multiplyArray(testArray));
+testMultiplyArray(testArray);
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
